@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Lateral</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center; 
+      align-items: center; 
+      min-height: 100vh;
+      background-color: #ecf0f1; 
+    }
+
+    .sidebar {
+      width: 400px;
+      background-color: #376b59;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      height: 80vh;
+      border-radius: 10px; 
+    }
+    .logo {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .logo img {
+      width: 150px; 
+      border-radius: 10px;
+    }
+
+   
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      list-style: none;
+      width: 100%; 
+    }
+
+    .menu li {
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      text-align: center; 
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .menu li:hover {
+      background-color: #1abc9c;
+      color: #ffffff;
+    }
+
+    .menu li.active {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .profile {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .profile img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 3px solid #ecf0f1;
+    }
+
+   
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 200px; 
+        
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="logo">
+      <img src="crefisa (1).jpeg" alt="Logo da Empresa">
+    </div>
+
+    <ul class="menu">
+      <li>Home</li>
+      <li>Sobre</li>
+      <li>Serviços</li>
+      <li>Contato</li>
+    </ul>
+
+    <div class="profile">
+      <img src="images.jpeg" alt="Foto de Perfil">
+    </div>
+  </div>
+
+</body>
+</html>
+
+
